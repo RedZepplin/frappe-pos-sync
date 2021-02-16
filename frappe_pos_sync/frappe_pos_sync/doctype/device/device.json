@@ -1,0 +1,103 @@
+{
+ "creation": "2018-11-15 21:59:07.016194",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_name",
+  "pos_profile",
+  "company",
+  "item_group_device",
+  "device_item_group",
+  "device_categories",
+  "mode_of_payment_section",
+  "cash_mop",
+  "card_mop",
+  "mop"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "Device Name",
+   "unique": 1
+  },
+  {
+   "description": "Used for generating Sales Invoice",
+   "fieldname": "pos_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "POS Profile",
+   "options": "POS Profile"
+  },
+  {
+   "description": "The Frappe POS by default have Cash/Card as payment type. Link the mode of payment for your generated sales invoice accounting details.",
+   "fieldname": "mode_of_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Mode of Payment"
+  },
+  {
+   "fieldname": "cash_mop",
+   "fieldtype": "Link",
+   "label": "Cash",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "card_mop",
+   "fieldtype": "Link",
+   "label": "Card",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "mop",
+   "fieldtype": "Table",
+   "options": "Device Payment"
+  },
+  {
+   "fieldname": "item_group_device",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "device_item_group",
+   "fieldtype": "Table",
+   "label": "Device Item Group",
+   "options": "Device Item Group"
+  },
+  {
+   "description": "Frappe POS Company Name",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "device_categories",
+   "fieldtype": "Table",
+   "label": "Device Categories",
+   "options": "Device Category"
+  }
+ ],
+ "modified": "2020-03-17 08:28:43.833568",
+ "modified_by": "Administrator",
+ "module": "Frappe POS Sync",
+ "name": "Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "device_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "device_name",
+ "track_changes": 1
+}

@@ -1,6 +1,6 @@
-## TailPOS Sync
+## Frappe POS Sync
 
-TailPOS ERPNext Sync
+Frappe POS ERPNext Sync
 
 
 #### License

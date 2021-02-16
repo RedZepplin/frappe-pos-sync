@@ -1,0 +1,67 @@
+{
+ "creation": "2018-11-15 16:35:39.809850",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "sold_by",
+  "price",
+  "qty",
+  "item_total_tax",
+  "taxes"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "sold_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sold By"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "item_total_tax",
+   "fieldtype": "Currency",
+   "label": "Item Total Tax"
+  },
+  {
+   "fieldname": "taxes",
+   "fieldtype": "Text",
+   "label": "Taxes"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-03-11 14:34:28.214321",
+ "modified_by": "Administrator",
+ "module": "Frappe POS Sync",
+ "name": "Receipts Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

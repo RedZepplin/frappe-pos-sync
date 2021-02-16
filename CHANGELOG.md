@@ -10,33 +10,33 @@
 - Updated hooks for fixtures, removed unnecessary fields
 
 ### v1.1.2 [23 апреля 2019]
-- Syncing for items limited when `In TailPOS` is checked
+- Syncing for items limited when `In Frappe POS` is checked
 
 ### v1.1.3 [24 апреля 2019]
-- TailPOS app API endpoint updated to get only In TailPOS filtered Items
+- Frappe POS app API endpoint updated to get only In Frappe POS filtered Items
 
 ### v1.1.4 [24 апреля 2019]
-- API endpoint for not force sync is updated for In TailPOS filter
-- Set Item UUID if not set and that In TailPOS is ticked
+- API endpoint for not force sync is updated for In Frappe POS filter
+- Set Item UUID if not set and that In Frappe POS is ticked
 
 ### v1.2.0 [24 апреля 2019]
 - Clean unnecessary codes
-- Added POS Profile field on Tail Settings
+- Added POS Profile field on Frappe POS Settings
 - Re-layout Receipts
 - Added function, "generated_si"
 
 ### v1.2.1 [24 апреля 2019]
-- Categories self.id generate, fix for TailPOS category duplicate
+- Categories self.id generate, fix for Frappe POS category duplicate
 
 ### v1.2.2 [25 апреля 2019]
-- Added Use Price List field on Tail Settings
-- Updated API endpoint for TailOrder to fetch Price List
+- Added Use Price List field on Frappe POS Settings
+- Updated API endpoint for FrappePOSOrder to fetch Price List
 
 ### v1.2.3 [26 апреля 2019]
-- Updated API endpoint for TailPOS to fetch Price List
+- Updated API endpoint for Frappe POS to fetch Price List
 
 ### v1.3.0 [26 апреля 2019]
-- MAJOR: TailPOS will be using name as naming
+- MAJOR: Frappe POS will be using name as naming
 
 ### v1.3.1 [29 апреля 2019]
 - Refactored codes
@@ -77,13 +77,13 @@
 ### v1.4.4 [10 мая 2019]
 - refactor: sync methods
 - feat: Device ID in syncing items
-- feat: device id in TailOrder
+- feat: device id in FrappePOSOrder
 
 ### v1.4.5 [14 мая 2019]
-- feat: added Use Device Profile field under Tail Settings
+- feat: added Use Device Profile field under Frappe POS Settings
 
 ### v1.5.0 [16 мая 2019]
-- feat: added Mode of Payment settings under Tail Settings
+- feat: added Mode of Payment settings under Frappe POS Settings
 
 ### v1.5.1 [19 мая 2019]
 - feat: added Mode of Payment settings under Device doctype
@@ -98,4 +98,4 @@
 - refactor: get_all to get_items_with_standard_rate
 
 ### v1.7.0 [6 августа 2019]
-- added: MOP table under Tail Settings and Device
+- added: MOP table under Frappe POS Settings and Device

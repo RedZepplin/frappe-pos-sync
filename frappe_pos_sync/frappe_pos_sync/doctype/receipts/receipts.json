@@ -1,0 +1,263 @@
+{
+ "creation": "2018-11-15 16:35:30.401087",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "receiptnumber",
+  "customer",
+  "status",
+  "reason",
+  "column_break",
+  "date",
+  "line_section",
+  "receipt_lines",
+  "subtotal",
+  "section_break_12",
+  "receipt_taxes",
+  "taxesvalue",
+  "lines",
+  "discount_section",
+  "discount",
+  "discounttype",
+  "total_amount",
+  "roundoff",
+  "column_break_16",
+  "discountvalue",
+  "discount_amount",
+  "additional_section",
+  "shift",
+  "attendant",
+  "reference_invoice",
+  "generated",
+  "column_break_15",
+  "deviceid",
+  "id",
+  "from_couchdb",
+  "date_updated",
+  "title"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Receipt Series",
+   "read_only": 1
+  },
+  {
+   "fieldname": "receiptnumber",
+   "fieldtype": "Data",
+   "label": "Receipt Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Cancelled\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Text",
+   "label": "Reason",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "line_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "receipt_lines",
+   "fieldtype": "Table",
+   "label": "Receipt Lines",
+   "options": "Receipts Item"
+  },
+  {
+   "fieldname": "lines",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Lines",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discounttype",
+   "fieldtype": "Data",
+   "label": "Discount Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discounttype == \"Percentage\"",
+   "fieldname": "discountvalue",
+   "fieldtype": "Data",
+   "label": "Discount Value(Percentage)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "taxesvalue",
+   "fieldtype": "Currency",
+   "label": "Taxes Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "additional_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Shift"
+  },
+  {
+   "fieldname": "attendant",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Attendant"
+  },
+  {
+   "fieldname": "reference_invoice",
+   "fieldtype": "Link",
+   "label": "Reference Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "generated",
+   "fieldtype": "Check",
+   "label": "Generated Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deviceid",
+   "fieldtype": "Data",
+   "label": "Device ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ID"
+  },
+  {
+   "fieldname": "from_couchdb",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "From CouchDB"
+  },
+  {
+   "fieldname": "date_updated",
+   "fieldtype": "Datetime",
+   "label": "Date Updated",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "receipt_taxes",
+   "fieldtype": "Table",
+   "label": "Receipt Taxes",
+   "options": "Receipt Taxes"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "roundoff",
+   "fieldtype": "Check",
+   "label": "Roundoff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Data",
+   "label": "Discount Amount",
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-04-01 12:36:03.415051",
+ "modified_by": "Administrator",
+ "module": "Frappe POS Sync",
+ "name": "Receipts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

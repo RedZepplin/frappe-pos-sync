@@ -3,4 +3,4 @@
 *.egg-info
 *.swp
 tags
-tailpos_sync/docs/current
+frappe_pos_sync/docs/current
